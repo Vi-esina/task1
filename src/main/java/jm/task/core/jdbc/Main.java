@@ -14,6 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
        UserService userDao= new UserServiceImpl();
+       userDao.dropUsersTable();
         userDao.createUsersTable();
         userDao.saveUser("Max", "Sokolov", (byte) 33);
         userDao.saveUser("Egor", "Drozdov", (byte) 12);
@@ -25,6 +26,7 @@ public class Main {
         }
 userDao.cleanUsersTable();
         userDao.dropUsersTable();
+
     }
 
 }
