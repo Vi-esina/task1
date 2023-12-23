@@ -9,9 +9,9 @@ import java.util.List;
 public class UserServiceTest {
     private final UserService userService = new UserServiceImpl();
 
-    private final String testName = "Ivan";
-    private final String testLastName = "Ivanov";
-    private final byte testAge = 5;
+    private final String testName = "Max";
+    private final String testLastName = "Sokolov";
+    private final byte testAge = 33;
 
 
     @Test
